@@ -70,6 +70,7 @@ public class Adapetr_data extends RecyclerView.Adapter<Adapetr_data.ViewHolder>{
                 myIntent.putExtra("Counrty00", name_ur.get(position).coll_country);
                 myIntent.putExtra("name001", name_ur.get(position).coll_name);
                 myIntent.putExtra("state001", name_ur.get(position).coll_state);
+                myIntent.putExtra("webpage",name_ur.get(position).coll_webpage);
                 con_Ada.startActivity(myIntent);
 
 

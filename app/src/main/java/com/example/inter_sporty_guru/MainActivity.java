@@ -78,21 +78,22 @@ public class MainActivity extends AppCompatActivity {
                                  s2=get_data.getString("country");
                                  s3=get_data.getString("state-province");
 
-
-/*                                JSONArray JArrBoundry=response.getJSONArray(Integer.parseInt("web_pages"));
+                                // JSONArray j_arr01=response.getJSONArray("web_pages");
+                               JSONArray JArrBoundry=get_data.getJSONArray("web_pages");
                                 for(int j1=0;j1<JArrBoundry.length();j1++)
                                 {
                                     s4+=JArrBoundry.getString(j1);
                                     s4+='\n';
                                     Log.i("check007",s4+"  \n");
 
-                                }*/
+                                }
 
 
                                  collage_data d1=new collage_data();
                                  d1.setColl_name(s1);
                                  d1.setColl_country(s2);
                                  d1.setColl_state(s3);
+                                 d1.setColl_webpage(s4);
                                 Log.d("check007", "onResponse: "+s1+" "+s2+" "+s3);
                                 tot_data.add(d1);
                             }

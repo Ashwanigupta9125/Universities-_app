@@ -20,9 +20,7 @@ public class MainActivity2 extends AppCompatActivity {
          name.setText(getIntent().getStringExtra("name001"));
          country.setText(getIntent().getStringExtra("Counrty00"));
          state.setText(getIntent().getStringExtra("state001"));
-
-
-
+         web_page.setText(getIntent().getStringExtra("webpage"));
 
 
     }
