@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
 
                 collage_data d2=new collage_data(s1,s2,s3,s4);
 
+
                 Log.d("check007", "onResponse: "+s1+" "+s2+" "+s3);
                 tot_data.add(d2);
 
