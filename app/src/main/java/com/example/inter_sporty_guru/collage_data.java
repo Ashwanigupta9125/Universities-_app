@@ -1,11 +1,31 @@
 package com.example.inter_sporty_guru;
 
+
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class collage_data {
 
+    @PrimaryKey
+    @NonNull
     public String coll_name;
+
     public String coll_country;
     public String coll_state;
     public String coll_webpage;
+
+
+
+
+    public collage_data(String s1, String s2, String s3, String s4) {
+        coll_name=s1;
+        coll_country=s2;
+        coll_state=s3;
+        coll_webpage=s4;
+
+    }
 
     public String getColl_country() {
         return coll_country;
